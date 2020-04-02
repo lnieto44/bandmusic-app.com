@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bandmusic.bandmusic">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.bandmusic.bandmusic.actividad_principal.InicioPrincipal">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".actividad_principal.Nosotros" />
+        <activity android:name=".actividad_principal.HomeActivity" />
+        <activity android:name=".actividad_principal.LoginActivity" />
+        <activity
+            android:name=".actividad_principal.RegistroJuradosActivity"
+            android:label="Registro de Jurados" />
+        <activity
+            android:name=".actividad_principal.Jurados_ListActivity"
+            android:label="Lista de Jurados"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".actividad_principal.Jurados_Evento"
+            android:label="Registro Jurado Evento" />
+        <activity
+            android:name=".actividad_principal.Jurados_ListEvento"
+            android:label="Lista Jurado Evento"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".actividad_principal.Inscribir_Banda"
+            android:label="Registro de Bandas" />
+        <activity
+            android:name=".actividad_principal.Inscribir_ListBanda"
+            android:label="Lista de Bandas"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".actividad_principal.DetalleSobreNosotros"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+            android:name=".actividad_principal.Ingresar_Eventos"
+            android:label="Registro de Eventos" />
+        <activity
+            android:name=".actividad_principal.Ingresar_ListEvento"
+            android:label="Lista de Eventos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Paneles_Laterales.MainActivityAdmin"
+            android:label="@string/title_activity_main_admin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".adaptadores.Cerrar_Sesion" />
+        <activity
+            android:name=".Paneles_Laterales.Asignar_Jurado"
+            android:label="@string/title_activity_asignar__jurado"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Paneles_Laterales.Crear_Eventos"
+            android:label="@string/title_activity_crear__eventos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Paneles_Laterales.Registrar_Banda"
+            android:label="@string/title_activity_registrar__banda"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Paneles_Laterales.Criterios_Evaluar"
+            android:label="@string/title_activity_criterios__evaluar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".actividad_principal.Edit_Del_Regis_Jurados" />
+        <activity android:name=".actividad_principal.Edit_Del_Regis_Banda" />
+        <activity android:name=".actividad_principal.Edit_Del_Ingresar_Evento" />
+        <activity
+            android:name=".Paneles_Laterales.Sobre_Nosotros"
+            android:label="@string/title_activity_sobre__nosotros"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Paneles_Laterales.Jurados"
+            android:label="@string/title_activity_jurados"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".actividad_principal.InvitadoInicio" />
+        <activity android:name=".actividad_principal.Manejo_Impacto_Visual" />
+        <activity android:name=".actividad_principal.Coreografia_Percusion" />
+        <activity android:name=".actividad_principal.Recorrido" />
+        <activity android:name=".actividad_principal.Salida" />
+        <activity android:name=".actividad_principal.Afinacion_Interpretacion" />
+        <activity android:name=".actividad_principal.VisualizarCriterios" />
+    </application>
+
+</manifest>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/afinacion_interpretacion"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="@string/hint_tarima1" />
+        <item
+            android:id="@+id/coreografia_percusion"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="Coreografía y Percusión" />
+        <item
+            android:id="@+id/manejo_impacto_visual"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="Manejo e Impacto Visual" />
+        <item
+            android:id="@+id/salida"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="Salida" />
+
+        <item
+            android:id="@+id/recorrido"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="Recorrido" />
+    </group>
+
+
+</menu>

@@ -1,0 +1,95 @@
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.bandmusic.bandmusic.Paneles_Laterales.MainActivityAdmin">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+   <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/regitro_jurados" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Asignar Jurados"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/crear" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="Crear Eventos"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/registro_banda" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="Registrar Banda"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/criterios_evalua" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="Criterios a Evaluar"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v4.widget.NestedScrollView>
+

@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">BandMusic</string>
+    <string name="text_accounts">Todas las Cuentas de Jurados</string>+
+
+    <string name="hint_name">Nombre</string>
+    <string name="hint_email">Correo</string>
+    <string name="hint_profesion">Profesion</string>
+    <string name="hint_celular">Celular</string>
+    <string name="nombre_1">Ingrid Johanna Ramirez Vasquez</string>
+    <string name="nombre_2">Road Manuel Garcia Ramirez</string>
+    <string name="nombre_3">Jaime Alberto Osorio Devia</string>
+    <string name="subtitulo_1">Ingeniero de Sistemas</string>
+    <string name="subtitulo_2">Ingeniero de Sistemas</string>
+    <string name="subtitulo_3">Ingeniero de Sistemas</string>
+    <string name="correo_1">iramirez50@itfip.edu.co</string>
+    <string name="correo_2">rgarcia473@itfip.edu.co</string>
+    <string name="correo_3">josorio39@itfip.edu.co</string>
+    <string name="celular_1">310 5799216</string>
+    <string name="celular_2">313 2475365</string>
+    <string name="celular_3">310 7621457</string>
+
+    <string name="hint_tarima1">Tarima 1</string>
+    <string name="hint_usuario">Usuario</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="hint_confirm_password">Confirmar Contraseña</string>
+    <string name="hint_categoria">Categoria</string>
+    <string name="text_login">Iniciar sesión</string>
+    <string name="text_register">Registro</string>
+    <string name="error_message_name">Por favor Ingrese los Nombres </string>
+    <string name="error_message_usuario">Por favor Ingrese el Usuario </string>
+    <string name="error_message_email">Por favor Ingrese un Correo Electrónico válido</string>
+    <string name="error_message_password">Por favor Ingrese la contraseña</string>
+
+    <string name="error_message_evento">Por favor Ingrese el Evento</string>
+    <string name="error_message_categoria">Por favor Ingrese la Categoria</string>
+    <string name="error_message_nombre_evento">Por favor Ingrese el Nombre Evento</string>
+    <string name="error_message_ciudad">Por favor Ingrese la Ciudad</string>
+    <string name="error_message_clave">Por favor Ingrese una Clave</string>
+    <string name="error_message_nombre_banda">Por favor Ingrese el nombre de la banda</string>
+    <string name="error_message_organizacion">Por favor Ingrese la organizacion</string>
+
+    <string name="error_message_numjurados">Por favor Ingrese Numero Jurados</string>
+    <string name="hint_nombre_banda">Nombre Banda</string>
+    <string name="hint_organizacion">Organizacion</string>
+    <string name="hint_ciudad">Ciudad</string>
+    <string name="hint_editars">Editar</string>
+    <string name="hint_eliminar">Eliminar</string>
+
+    <string name="success_message">Registro exitoso</string>
+    <string name="text_not_member">¿No tienes cuenta aún? Crea una</string>
+    <string name="text_already_member">¿Ya eres usuario? Iniciar sesión</string>
+    <string name="error_email_exists">El Correo Electrónico ya existe</string>
+    <string name="error_password_match">La contraseña no coincide</string>
+    <string name="error_valid_email_password">Correo o contraseña equivocada</string>
+    <string name="action_settings">Configuraciones</string>
+    <string name="text_hello">Bienvenido,</string>
+    <string name="text_title">BandMusic</string>
+    <string name="title_activity_jurados">Jurados</string>
+
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="app_asignar_jurados">Asignar Jurados</string>
+    <string name="app_registrar_banda">Registrar Banda</string>
+    <string name="app_crear_evento">Crear Evento</string>
+    <string name="hint_evento">Evento</string>
+    <string name="hint_nombre_evento">Nombre Evento</string>
+    <string name="hint_num_jurados">Numero Jurados</string>
+    <string name="app_generar_reporte">Generar Reporte</string>
+    <string name="app_criterios_evaluadados">Criterios a Evaluar</string>
+
+    <string name="app_tools">Settings</string>
+    <string name="app_communicate">Communicate</string>
+    <string name="app_share">Share</string>
+    <string name="app_send">Send</string>
+    <string name="appmenuname">Global Mall Online</string>
+
+
+    <string name="navdemo">Navigation Drawer Full Demo</string>
+    <string name="gallery">This is GALLERY Activity</string>
+    <string name="fileimport">This is FILE IMPORT Activity</string>
+    <string name="slideshow">This is SLIDE SHOW Activity</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="log_out_item">Cerrar Sesion</string>
+    <string name="configuracion_item">Configuraciones</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_main_jurados">Principal</string>
+    <string name="title_activity_main_admin">Principal</string>
+    <string name="title_activity_registrar__banda">Registrar Banda</string>
+    <string name="title_activity_crear__evento">Crear Evento</string>
+    <string name="title_activity_generar__reporte">Generar Reporte</string>
+    <string name="title_activity_criterios__evaluados">Criterios Evaluados</string>
+    <string name="title_activity_asignar__jurado">Asignar Jurados</string>
+    <string name="title_activity_crear__eventos">Crear Eventos</string>
+    <string name="title_activity_criterios__evaluar">Criterios para Evaluar</string>
+    <string name="title_activity_sobre__nosotros">Sobre_Nosotros</string>
+</resources>

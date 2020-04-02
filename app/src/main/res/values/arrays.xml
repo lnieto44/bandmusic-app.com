@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nombre">
+        <item>@string/nombre_1</item>
+        <item>@string/nombre_2</item>
+        <item>@string/nombre_3</item>
+
+    </string-array>
+
+    <string-array name="profesion">
+        <item>@string/subtitulo_1</item>
+        <item>@string/subtitulo_2</item>
+        <item>@string/subtitulo_3</item>
+
+    </string-array>
+
+    <string-array name="correo">
+    <item>@string/correo_1</item>
+    <item>@string/correo_2</item>
+    <item>@string/correo_3</item>
+
+    </string-array>
+    <string-array name="celular">
+        <item>@string/celular_1</item>
+        <item>@string/celular_2</item>
+        <item>@string/celular_3</item>
+
+    </string-array>
+
+    <integer-array name="imagen">
+        <item>@drawable/ingrid</item>
+        <item>@drawable/manuel</item>
+        <item>@drawable/jaime</item>
+    </integer-array>
+</resources>
