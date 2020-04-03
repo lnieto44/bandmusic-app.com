@@ -17,9 +17,7 @@ import com.bandmusic.bandmusic.R;
 public class InicioPrincipal extends AppCompatActivity implements View.OnClickListener {
 
     private Button btn1, btn2, btn3;
-    //private Recipe recipe;
-
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,7 +44,7 @@ public class InicioPrincipal extends AppCompatActivity implements View.OnClickLi
         Uri appLinkData = intent.getData();
         if (Intent.ACTION_VIEW.equals(appLinkAction) && appLinkData != null){
             String recipeId = appLinkData.getLastPathSegment();
-            Uri appData = Uri.parse("content://com.bandmusic-app/main/").buildUpon()
+            Uri appData = Uri.parse("content://com.bandmusic.bandmusic/InicioPrincipal/").buildUpon()
                     .appendPath(recipeId).build();
             showRecipe(appData);
         }
