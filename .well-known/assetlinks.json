@@ -1,9 +1,0 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "com.bandmusic.bandmusic",
-    "sha256_cert_fingerprints":
-    ["4C:3E:8A:8D:B1:B8:74:94:DB:CE:A1:A3:D2:E3:6B:9A:01:5C:04:7B:50:29:57:9E:B4:C7:CB:CC:2C:D8:23:A6"]
-  }
-}]
