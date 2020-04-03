@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.bandmusic.bandmusic">
-
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,6 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name="com.bandmusic.bandmusic.actividad_principal.InicioPrincipal">
+            <tools:validation testUrl="https://bandmusic-app.com/inicioprincipal" />
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,9 +25,9 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:scheme="http"
+                    android:scheme="https"
                     android:host="bandmusic-app.com"
-                    android:pathPattern="/InicioPrincipal" />
+                    android:pathPattern="/inicioprincipal" />
             </intent-filter>
 
         </activity>
