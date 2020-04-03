@@ -7,6 +7,7 @@ import android.provider.BlockedNumberContract;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -14,11 +15,34 @@ import com.bandmusic.bandmusic.Paneles_Laterales.MainActivityAdmin;
 import com.bandmusic.bandmusic.Paneles_Laterales.Registrar_Banda;
 import com.bandmusic.bandmusic.R;
 
+import org.json.JSONObject;
+
+import io.branch.referral.Branch;
+import io.branch.referral.BranchError;
+
 public class InicioPrincipal extends AppCompatActivity implements View.OnClickListener {
 
     private Button btn1, btn2, btn3;
     //private Recipe recipe;
 
+    @Override public void onStart() {
+        super.onStart();
+        Branch branch = Branch.getInstance(getApplicationContext());
+        branch.initSession(new Branch.BranchReferralInitListener() {
+            @Override
+            public void onInitFinished(JSONObject referringParams, BranchError error) {
+                if (error == null){
+                    Log.i("BranchConfigTest","deep link data: " + referringParams);
+                }
+            }
+        },this.getIntent().getData(), this);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Branch.getInstance(getApplicationContext()).closeSession();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,10 +60,13 @@ public class InicioPrincipal extends AppCompatActivity implements View.OnClickLi
         handleIntent(getIntent());
     }
 
+
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         handleIntent(intent);
     }
+
+
 
     private void handleIntent(Intent intent) {
         String appLinkAction = intent.getAction();
@@ -54,6 +81,8 @@ public class InicioPrincipal extends AppCompatActivity implements View.OnClickLi
 
     private void showRecipe(Uri recipeUri) {
     }
+
+
 
     @Override
     public void onClick(View v) {
