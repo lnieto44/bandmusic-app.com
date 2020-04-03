@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.bandmusic.bandmusic">
 
     <application
@@ -9,11 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name="com.bandmusic.bandmusic.actividad_principal.InicioPrincipal">
+            <tools:validation testUrl="https://bandmusic-app.com/main" />
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https"
+                    android:host="bandmusic-app.com"
+                    android:pathPattern="/main" />
+            </intent-filter>
+
         </activity>
         <activity android:name=".actividad_principal.Nosotros" />
         <activity android:name=".actividad_principal.HomeActivity" />

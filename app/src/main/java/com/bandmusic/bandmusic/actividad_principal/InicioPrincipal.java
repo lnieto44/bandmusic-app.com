@@ -1,6 +1,10 @@
 package com.bandmusic.bandmusic.actividad_principal;
 
 import android.content.Intent;
+import android.net.Uri;
+import android.os.Build;
+import android.provider.BlockedNumberContract;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,21 +17,42 @@ import com.bandmusic.bandmusic.R;
 public class InicioPrincipal extends AppCompatActivity implements View.OnClickListener {
 
     private Button btn1, btn2, btn3;
+    //private Recipe recipe;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio_principal);
 
-        btn1=(Button) findViewById(R.id.button3);
-        btn2=(Button) findViewById(R.id.button4);
-        btn3=(Button) findViewById(R.id.button5);
+        btn1 = (Button) findViewById(R.id.button3);
+        btn2 = (Button) findViewById(R.id.button4);
+        btn3 = (Button) findViewById(R.id.button5);
 
         btn1.setOnClickListener(this);
         btn2.setOnClickListener(this);
         btn3.setOnClickListener(this);
 
+        handleIntent(getIntent());
+    }
 
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        handleIntent(intent);
+    }
+
+    private void handleIntent(Intent intent) {
+        String appLinkAction = intent.getAction();
+        Uri appLinkData = intent.getData();
+        if (Intent.ACTION_VIEW.equals(appLinkAction) && appLinkData != null){
+            String recipeId = appLinkData.getLastPathSegment();
+            Uri appData = Uri.parse("content://com.bandmusic-app/main/").buildUpon()
+                    .appendPath(recipeId).build();
+            showRecipe(appData);
+        }
+    }
+
+    private void showRecipe(Uri recipeUri) {
     }
 
     @Override
