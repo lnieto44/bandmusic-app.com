@@ -10,7 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name="com.bandmusic.bandmusic.actividad_principal.InicioPrincipal">
-            <tools:validation testUrl="https://bandmusic-app.com/main" />
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,9 +23,9 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:scheme="https"
+                    android:scheme="http"
                     android:host="bandmusic-app.com"
-                    android:pathPattern="/main" />
+                    android:pathPattern="/InicioPrincipal" />
             </intent-filter>
 
         </activity>
